@@ -58,7 +58,7 @@ const EnvioDados = ({ onFetchComplete }) => {
     });
 
     try {
-      const response = await fetch("https://blb9c7huc7.execute-api.sa-east-1.amazonaws.com/Prod/", {
+      const response = await fetch(import.meta.env.VITE_API_URL_CNAB, {
         method: "POST",
         body: formData,
         headers: {
@@ -114,7 +114,7 @@ const EnvioDados = ({ onFetchComplete }) => {
     });
 
     try {
-      const response = await fetch("https://aqt3khbctj.execute-api.sa-east-1.amazonaws.com/UploadNotas/envia-notas", {
+      const response = await fetch(import.meta.env.VITE_API_URL_UPLOAD_NOTAS, {
         method: "POST",
         headers: {
           "x-api-key": import.meta.env.VITE_API_KEY
@@ -166,7 +166,7 @@ const EnvioDados = ({ onFetchComplete }) => {
     setIsLoading(true);
 
     try {
-      const res = await fetch("https://mcjranm5ra.execute-api.sa-east-1.amazonaws.com/Prod/retrieveResult", {
+      const res = await fetch(import.meta.env.VITE_API_URL_STATUS, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -240,7 +240,7 @@ const EnvioDados = ({ onFetchComplete }) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://mrpqusx8p7.execute-api.sa-east-1.amazonaws.com/Prod/sendMessage", {
+      const response = await fetch(import.meta.env.VITE_API_URL_SEND_MESSAGE, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
@@ -259,7 +259,7 @@ const EnvioDados = ({ onFetchComplete }) => {
             const payload = {
               messageId:messageIdd
             };
-            const response = await fetch('https://mcjranm5ra.execute-api.sa-east-1.amazonaws.com/Prod/status2', {
+            const response = await fetch(import.meta.env.VITE_API_URL_RETRIEVE_RESULT, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
