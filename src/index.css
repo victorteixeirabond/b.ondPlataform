@@ -1,0 +1,74 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+
+    --radius: 0.5rem;
+
+    /* Custom colors for the financial platform */
+    --eucalyptus-dark: 22 78 99;
+    --eucalyptus-light: 167 225 195;
+    --eucalyptus-pale: 209 234 230;
+    --sage-beige: 245 245 220;
+    --financial-gray: 248 249 250;
+  }
+
+  .dark {
+    --background: 9 9 11;
+    --foreground: 250 250 250;
+
+    --card: 9 9 11;
+    --card-foreground: 250 250 250;
+
+    --popover: 9 9 11;
+    --popover-foreground: 250 250 250;
+
+    --primary: 167 225 195;
+    --primary-foreground: 9 9 11;
+
+    --secondary: 39 39 42;
+    --secondary-foreground: 250 250 250;
+
+    --muted: 39 39 42;
+    --muted-foreground: 161 161 170;
+
+    --accent: 39 39 42;
+    --accent-foreground: 250 250 250;
+
+    --destructive: 127 29 29;
+    --destructive-foreground: 250 250 250;
+
+    --border: 39 39 42;
+    --input: 39 39 42;
+    --ring: 167 225 195;
+  }
+}
+
+@layer utilities {
+  .text-eucalyptus-dark {
+    color: rgb(22 78 99);
+  }
+  
+  .bg-eucalyptus-dark {
+    background-color: rgb(22 78 99);
+  }
+  
+  .bg-eucalyptus-light {
+    background-color: rgb(167 225 195);
+  }
+  
+  .bg-eucalyptus-pale {
+    background-color: rgb(209 234 230);
+  }
+  
+  .bg-sage-beige {
+    background-color: rgb(245 245 220);
+  }
+  
+  .border-eucalyptus {
+    border-color: rgb(167 225 195);
+  }
+}
