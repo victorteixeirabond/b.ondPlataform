@@ -62,7 +62,7 @@ const EnvioDados = ({ onFetchComplete }) => {
         method: "POST",
         body: formData,
         headers: {
-          'x-api-key':"wGSTapb2DG3WDOJGgbcVI3rwFomPEnr7WPnC3HC5"
+          'x-api-key':import.meta.env.VITE_API_KEY
         }
       });
 
@@ -117,7 +117,7 @@ const EnvioDados = ({ onFetchComplete }) => {
       const response = await fetch("https://aqt3khbctj.execute-api.sa-east-1.amazonaws.com/UploadNotas/envia-notas", {
         method: "POST",
         headers: {
-          "x-api-key": "wGSTapb2DG3WDOJGgbcVI3rwFomPEnr7WPnC3HC5"
+          "x-api-key": import.meta.env.VITE_API_KEY
         },
         body: formData
       });
@@ -170,7 +170,7 @@ const EnvioDados = ({ onFetchComplete }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": "wGSTapb2DG3WDOJGgbcVI3rwFomPEnr7WPnC3HC5"
+          "x-api-key": import.meta.env.VITE_API_KEY
         },
         body: JSON.stringify(payload)
       });
@@ -244,7 +244,7 @@ const EnvioDados = ({ onFetchComplete }) => {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
-        "x-api-key": "wGSTapb2DG3WDOJGgbcVI3rwFomPEnr7WPnC3HC5"
+        "x-api-key": import.meta.env.VITE_API_KEY
         },
         body: JSON.stringify(payload)
       });
@@ -263,7 +263,7 @@ const EnvioDados = ({ onFetchComplete }) => {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
-                "x-api-key": "wGSTapb2DG3WDOJGgbcVI3rwFomPEnr7WPnC3HC5"
+                "x-api-key": import.meta.env.VITE_API_KEY
               },
               body: JSON.stringify(payload)
             });
