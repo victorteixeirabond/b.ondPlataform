@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:"/b.ondcapital",
+  base:"/b.ondPlataform",
 }));
